@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Main page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top-menu">
+            <div>
+                <img src="./image/LOGO.jpg" alt="LOGO" width="100px" height="100px">
+            </div>
+            <div class="page">
+                <a href="./main.html">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Thông tin về quán</a>
+                <a href="#">Giới thiệu</a>
+            </div>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="./index.html">
+                    <i class="fa-solid fa-user" id="users"></i>
+                </a>
+                <div class="lines"></div>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+        </div>  
+
+
+        <div class="magnify">
+            <div class="search">
+                    <input id="search-input" type="text" class="searchTerm" placeholder="Bạn muốn tìm muốn gì dạ?">
+                    <button id="search" type="submit" class="searchButton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+            </div>
+        
+
+        </div>
+
+        
+        <div id="products"></div>
+
+    </div>
+   <script src="./main.js"></script>
+</body>
+</html>

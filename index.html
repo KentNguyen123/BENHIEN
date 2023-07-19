@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./trangchu/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Main page</title>
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
 </head>
+
 <body>
-   <div class="container  gradient-para">
-      <div class="top-menu">
-            <div class="logo">
-               <a href="./index.html">
-                <img src="./image/LOGO.jpg" alt="logo">
-               </a> 
-            </div>
-            <div class="page">
-                <a href="./index.html">Trang chủ</a>
-                <a href="#">Menu</a>
-                <a href="#">Thông tin về quán</a>
-                <a href="#">Giới thiệu</a>
-            </div>
-        </div> 
+    <div id="app"></div>
 
-        <div class="main-content">
-            <div class="slideshow-container" style="border-radius: 10px;">
-                <div class="main">
-                    <img src="./image/test.jpg" class="img-feature">
-                    <div class="control prev">
-                        <i class="fa-solid fa-arrow-left" style="color: #191313b1;"></i>
-                    </div>
-                    <div class="control next">
-                        <i class="fa-solid fa-arrow-right" style="color: #191313b1"></i>
-                    </div>
-                </div>
-                <div class="list-image">
-                    <div class="slideshow-img"><img src="./image/test.jpg" alt="" width="80%" height="100%"></div>
-                    <div class="slideshow-img"><img src="./image/menu.jpg" alt="" width="80%" height="100%"></div>
-                    <div class="slideshow-img"><img src="./image/test.jpg" alt="" width="80%" height="100%"></div>
-                    <div class="slideshow-img"><img src="./image/menu.jpg" alt="" width="80%" height="100%"></div>
-                    <div class="slideshow-img"><img src="./image/test.jpg" alt="" width="80%" height="100%"></div>
-                    <div class="slideshow-img"><img src="./image/menu.jpg" alt="" width="80%" height="100%"></div>
-                </div>
-            </div>
-        </div>
 
-   </div>
-   <script src="./trangchu/index.js"></script>
+    <!-- ---------------- Firebase config ----------------- -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = { 
+            apiKey : "AIzaSyDk6hVUwk-nuQXYIoeoA06RSy2q-azeipQ" , 
+            authDomain : "benhien-db25b.firebaseapp.com" , 
+            projectId : "benhien-db25b" , 
+            storageBucket : "benhien-db25b.appspot.com" , 
+            messagingSenderId : "105647371264" , 
+            appId : "1:105647371264:web:f9097b94ac4802f5cf14e5" 
+            };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="./index.js" type="module"></script>
 </body>
+
 </html>
