@@ -80,12 +80,16 @@ class Login{
                         <button class="btn">LOGIN</button>
                     </div>
 
-                    <a class="account">Register your new account</a>
+                    <a class="account" id="dangKi">Register your new account</a>
                 </div>
             </form>
 
 
         </div>`
+
+        let register = document.getElementById("dangKi")
+        register.addEventListener("click", this.gotoRegister)
+
         
         
     }

@@ -157,14 +157,18 @@ class Register {
                     </div>
 
                     <div class="buttonMain">
-                        <button class="btn">REGISTER</button>
+                        <button class="btn">SUBMIT</button>
                     </div>
 
-                    <a class="account">LOGIN</a>
+                    <a class="account" id="dangNhap">You already have an account?</a>
                 </div>
             </form>
 
         </div>`
+
+        let login = document.getElementById("dangNhap")
+        login.addEventListener("click", this.gotoLogin)
+
     }
 
     //2
